@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<form action="#" th:action="@/" th:object="${persona}" method="post" >
+		<p>genero:</p>
+		
+		  <input type="text" th:field="*{genero}" id="">
+		  		<p>altura:</p>
+		  <input type="text" th:field="*{altura}" id="">
+		  		<p>peso:</p>
+		   <input type="text" th:field="*{peso}" id="">
+	</form>
+    <label  for="">Nombre</label>
+  
+</body>
+</html>

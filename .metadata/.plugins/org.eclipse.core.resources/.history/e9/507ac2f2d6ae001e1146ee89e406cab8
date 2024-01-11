@@ -1,0 +1,34 @@
+package com.example.demo;
+
+public class Persona {
+	private double peso;
+	private double altura;
+	private char genero;
+	
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public char getGenero() {
+		return genero;
+	}
+
+	public void setGenero(char genero) {
+		this.genero = genero;
+	}
+
+
+}

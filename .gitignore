@@ -1,0 +1,38 @@
+# .gitignore for Spring Boot
+
+# IDE/Editor files
+.idea/
+.vscode/
+*.iml
+
+# Compiled bytecode
+/target/
+*.class
+
+# Logs
+/log/
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven
+mvnw
+mvnw.cmd
+.mvn/
+
+# Gradle
+.gradle/
+build/
+
+# Spring Boot
+application.properties
+application.yml
+
+# Eclipse
+.settings/
+
+# Thumbnails
+Thumbs.db
+.DS_Store

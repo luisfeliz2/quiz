@@ -1,0 +1,7 @@
+package com.example.demo;
+
+public class Persona {
+private double peso;
+private double altura;
+private char genero;
+}
