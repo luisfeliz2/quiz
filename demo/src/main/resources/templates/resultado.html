@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="mb-4">Resultado Final</h1>
+
+    <p>Tu puntuación final es: <span th:text="${puntuacionFinal}"></span></p>
+    <p>Tu categoría es: <span th:text="${categoria}"></span></p>
+
+    <div th:if="${categoria == 'leon'}">
+        <img th:src="@{/leon.jpg}" class="img-fluid" width="300" alt="León">
+        <p>Tu animal espiritual es el león. Los leones son conocidos por su valentía, liderazgo y determinación. Esta elección puede reflejar aspectos de tu personalidad como fuerza interior, coraje y una naturaleza líder.</p>
+    </div>
+
+    <div th:if="${categoria == 'buo'}">
+        <img th:src="@{/buo.jpg}" class="img-thumbnail" width="300" alt="Búho">
+        <p>¡Enhorabuena! Según tus respuestas, tu animal espiritual parece ser el búho. Los búhos son conocidos por su sabiduría, intuición aguda y capacidad para ver más allá de lo evidente. Esto podría reflejar tu naturaleza reflexiva y perceptiva.</p>
+    </div>
+
+    <div th:if="${categoria == 'aguila'}">
+        <img th:src="@{/aguila.jpg}" class="img-thumbnail" width="300" alt="Águila">
+        <p>¡Enhorabuena! Según tus respuestas, tu animal espiritual es el águila. Este majestuoso animal está asociado con cualidades como la visión clara, la perspicacia y la agudeza mental. Las águilas son conocidas por su capacidad para ver el panorama completo y tomar decisiones informadas. Esto podría reflejar tu propia habilidad para enfrentar desafíos con claridad y determinación.</p>
+    </div>
+
+    <div th:if="${categoria == 'delfin'}">
+        <img th:src="@{/delfin.jpg}" class="img-thumbnail" width="300" alt="Delfín">
+        <p>¡Enhorabuena! Según tus respuestas en el quiz, tu animal espiritual es el delfín. Los delfines son conocidos por su inteligencia, amistosidad y sentido de la diversión. Esto sugiere que compartes características como la curiosidad, la sociabilidad y la alegría.</p>
+    </div>
+    
+    <div>
+		<h1>Resultados</h1>
+    <table>
+        <thead>
+            <tr>
+				
+                <th>|Nombre del Jugador___|</th>
+                <th>Puntuación|  </th>
+                <th>categoria|   </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterar sobre la lista de resultados y mostrar cada resultado -->
+            <tr th:each="resultado : ${Resultado}">
+				
+                <td th:text="${resultado.nombreJugador}">   Nombre del Jugador</td>
+                <td th:text="${resultado.puntuacion}">   Puntuación</td>
+                <td th:text="${resultado.categoria}">   Categoria</td>
+            </tr>
+        </tbody>
+    </table>
+	</div>
+    
+    </div>
+    
+    
+</div>
+</body>
+</html>
