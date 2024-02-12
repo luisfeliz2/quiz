@@ -1,4 +1,4 @@
-package com.example.demo;
+package demo;
 
 import java.util.Map;
 
@@ -14,23 +14,23 @@ public class ControladorIMC {
 	
 	
 	@GetMapping("/")
-	public String verFormulario(Model model) {
+	public String verFormulario(Model demo.model) {
 		
-		model.addAttribute("person",new Persona());
+		demo.model.addAttribute("person",new Persona());
 		return "formularioIMC";
 		
 		
 	}
 	@PostMapping("/")
-	public String calIMC(Persona persona,Model model) {
+	public String calIMC(Persona persona,Model demo.model) {
 		double imc = persona.calcularIMC();
 		String resultado = resultado(persona.getGenero(),imc);
-		model.addAllAttributes(Map.of(
+		demo.model.addAllAttributes(Map.of(
 				
 				));
-		model.addAttribute("imc",imc);
-		model.addAttribute("resultado",resultado);
-		model.addAttribute("person",persona);
+		demo.model.addAttribute("imc",imc);
+		demo.model.addAttribute("resultado",resultado);
+		demo.model.addAttribute("person",persona);
 		return "resultado";
 		
 	}

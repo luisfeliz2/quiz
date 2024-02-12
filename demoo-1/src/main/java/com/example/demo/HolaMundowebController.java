@@ -1,4 +1,4 @@
-package com.example.demo;
+package demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,8 +16,8 @@ public class HolaMundowebController {
   }
 
   @PostMapping("/saludo")
-  public String envioSaludo(@ModelAttribute Saludo saludo, Model model) {
-    model.addAttribute("saludo", saludo);
+  public String envioSaludo(@ModelAttribute Saludo saludo, Model demo.model) {
+    demo.model.addAttribute("saludo", saludo);
     return "resultado";
   }
 

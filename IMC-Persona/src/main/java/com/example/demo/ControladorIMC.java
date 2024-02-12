@@ -1,4 +1,4 @@
-package com.example.demo;
+package demo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,15 +15,15 @@ public class ControladorIMC {
 	
 	
 	@GetMapping("/")
-	public String verFormulario(Model model) {
+	public String verFormulario(Model demo.model) {
 		
-		model.addAttribute("person",new Persona());
+		demo.model.addAttribute("person",new Persona());
 		return "formularioIMC";
 		
 		
 	}
 	@PostMapping("/")
-	public String calIMC(Persona persona,Model model) {
+	public String calIMC(Persona persona,Model demo.model) {
 		double imc = persona.calcularIMC();
 		String resultado = resultado(persona.getGenero(),imc);
 		Map<String, Object> atributos = new HashMap<>();
@@ -32,7 +32,7 @@ public class ControladorIMC {
 		atributos.put("resultado",resultado);
 		atributos.put("person",persona);
 		
-		model.addAllAttributes(atributos);
+		demo.model.addAllAttributes(atributos);
 		return "resultado";
 		
 	}

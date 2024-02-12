@@ -1,4 +1,4 @@
-package com.example.demo;
+package demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;

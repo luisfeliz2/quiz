@@ -1,4 +1,4 @@
-package com.example.demo;
+package demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,15 +12,15 @@ public class ControladorIMC {
 	
 	
 	@GetMapping("/")
-	public String verFormulario(Model model) {
+	public String verFormulario(Model demo.model) {
 		
-		model.addAttribute("person",new Persona());
+		demo.model.addAttribute("person",new Persona());
 		return "formularioIMC";
 		
 		
 	}
 	@PostMapping("/")
-	public String calIMC(Persona persona,Model model) {
+	public String calIMC(Persona persona,Model demo.model) {
 		double imc = persona.calcularIMC();
 		String resultadoo = resultado(persona.getGenero(),imc);
 		return "resultado";

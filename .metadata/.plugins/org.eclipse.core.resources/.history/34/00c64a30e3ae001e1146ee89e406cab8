@@ -1,4 +1,4 @@
-package com.example.demo;
+package demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,9 +11,9 @@ public class ControladorIMC {
 	
 	
 	@GetMapping("/")
-	public String verFormulario(Model model) {
+	public String verFormulario(Model demo.model) {
 		
-		model.addAttribute("person",new Persona());
+		demo.model.addAttribute("person",new Persona());
 		return "formularioIMC";
 		
 		

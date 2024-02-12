@@ -1062,7 +1062,7 @@ Binding(CTRL+SHIFT+C,
 !ENTRY org.eclipse.jdt.ui 4 10001 2023-12-19 10:42:07.019
 !MESSAGE Internal Error
 !STACK 1
-Java Model Exception: Error in Java Model (code 969): GreetingController [in [Working copy] Demoo1Application.java [in com.example.demo [in src/main/java [in demoo-1]]]] does not exist
+Java Model Exception: Error in Java Model (code 969): GreetingController [in [Working copy] Demoo1Application.java [in demo [in src/main/java [in demoo-1]]]] does not exist
 	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:550)
 	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:593)
 	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:304)
@@ -1083,12 +1083,12 @@ Java Model Exception: Error in Java Model (code 969): GreetingController [in [Wo
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-12-19 10:42:07.023
-!MESSAGE GreetingController [in [Working copy] Demoo1Application.java [in com.example.demo [in src/main/java [in demoo-1]]]] does not exist
+!MESSAGE GreetingController [in [Working copy] Demoo1Application.java [in demo [in src/main/java [in demoo-1]]]] does not exist
 
 !ENTRY org.eclipse.jdt.ui 4 10001 2023-12-19 10:42:07.028
 !MESSAGE Internal Error
 !STACK 1
-Java Model Exception: Error in Java Model (code 969): GreetingController [in [Working copy] Demoo1Application.java [in com.example.demo [in src/main/java [in demoo-1]]]] does not exist
+Java Model Exception: Error in Java Model (code 969): GreetingController [in [Working copy] Demoo1Application.java [in demo [in src/main/java [in demoo-1]]]] does not exist
 	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:550)
 	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:593)
 	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:304)
@@ -1105,7 +1105,7 @@ Java Model Exception: Error in Java Model (code 969): GreetingController [in [Wo
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-12-19 10:42:07.028
-!MESSAGE GreetingController [in [Working copy] Demoo1Application.java [in com.example.demo [in src/main/java [in demoo-1]]]] does not exist
+!MESSAGE GreetingController [in [Working copy] Demoo1Application.java [in demo [in src/main/java [in demoo-1]]]] does not exist
 
 !ENTRY org.eclipse.core.resources 4 368 2023-12-19 10:42:34.470
 !MESSAGE Resource '/demoo-1/src/main/java/com/example/demo/Demoo1Application.java' does not exist.
@@ -1357,7 +1357,7 @@ java.lang.InterruptedException
 !ENTRY org.eclipse.jdt.ui 4 10001 2023-12-20 10:21:57.290
 !MESSAGE Internal Error
 !STACK 1
-Java Model Exception: Error in Java Model (code 969): setContenido(String) [in Saludo [in [Working copy] Saludo.java [in com.example.demo [in src/main/java [in demoo-1]]]]] does not exist
+Java Model Exception: Error in Java Model (code 969): setContenido(String) [in Saludo [in [Working copy] Saludo.java [in demo [in src/main/java [in demoo-1]]]]] does not exist
 	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:550)
 	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:593)
 	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:304)
@@ -1378,7 +1378,7 @@ Java Model Exception: Error in Java Model (code 969): setContenido(String) [in S
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-12-20 10:21:57.291
-!MESSAGE setContenido(String) [in Saludo [in [Working copy] Saludo.java [in com.example.demo [in src/main/java [in demoo-1]]]]] does not exist
+!MESSAGE setContenido(String) [in Saludo [in [Working copy] Saludo.java [in demo [in src/main/java [in demoo-1]]]]] does not exist
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-12-20 10:49:47.520
 !MESSAGE Classpath changed for project: demoo-1
