@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pregunta 1</title>
+     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+   
+    <div class="container">
+	<h1  class="mb-4">¿Cuál es tu principal meta en la vida?</h1>
+    <form action="/pregunta4" method="post">
+		<select class="form-select form-select-lg mb-3" name="respuesta4" aria-label=".form-select-lg example">
+  			<option selected>pulsa para abrir</option>
+ 			 <option value="1">Tener familia</option>
+ 			 <option value="2">Acabar una carrera</option>
+  			<option value="3">Ser rico</option>
+  			<option value="4">Encontrar el amor verdadero</option>
+  				
+		</select>
+		<button type="submit" class="btn btn-primary mb-3">Ver resultado</button>
+    </form>
+    </div>
+</body>
+</html>

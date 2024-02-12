@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringQUIZ</title>
+</head>
+<body>
+    <h1>¿Qué nacionalidad tiene tu alma?</h1>
+    <form action="/quiz" method="post">
+        <label for="answer">Tu respuesta:</label>
+        <input type="text" id="answer" name="answer" required>
+        <button type="submit">Siguiente</button>
+    </form>
+
+    <h1>Tu puntuación actual es: <span th:text="${session.getAttribute('score') != null ? session.getAttribute('score') : 0}"></span></h1>
+</body>
+</html>

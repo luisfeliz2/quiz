@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pregunta 2</title>
+     <link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	  <div class="container custom-form-container">
+    <h1>¿Qué es lo que más valoras de una persona?</h1>
+    <form action="/pregunta2" method="post">
+     <div class="form-group">
+    	<div class="container mt-4">
+			
+    	<div class="row">
+        	<div class="col-md-3">
+            <img th:src="@{/flores-rosas-1.jpg}" class="img-fluid" alt="Imagen 1">
+            <label class="d-block text-center mt-2">Belleza</label>
+        </div>
+        
+        <div class="col-md-3">
+            <img th:src="@{/amabilidad.jpg}" class="img-fluid" alt="Imagen 2">
+            <label class="d-block text-center mt-2">Amabilidad</label>
+        </div>
+        
+        <div class="col-md-3">
+            <img th:src="@{/estatus.jpg}" class="img-fluid" alt="Imagen 3">
+            <label class="d-block text-center mt-2">estatus</label>
+        </div>
+        
+        <div class="col-md-3">
+            <img th:src="@{/pasion.jpg}" class="img-fluid" alt="Imagen 4">
+            <label class="d-block text-center mt-2">pasion</label>
+        </div>
+    </div>
+</div>
+
+       		<textarea name="respuesta2" class="form-control" placeholder="belleza, Estatus, Pasion, Amabilidad Humor" ></textarea>
+        	<button type="submit" class="btn btn-primary">Siguiente</button>
+        </div>
+    </form>
+	  </div>
+</body>
+</html>
